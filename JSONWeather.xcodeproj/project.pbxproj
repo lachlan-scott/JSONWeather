@@ -12,7 +12,6 @@
 		3691C30D2419136100E124A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3691C30B2419136100E124A0 /* Main.storyboard */; };
 		3691C30F2419136600E124A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3691C30E2419136600E124A0 /* Assets.xcassets */; };
 		3691C3122419136600E124A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3691C3102419136600E124A0 /* LaunchScreen.storyboard */; };
-		3691C31A241913E200E124A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3691C319241913E200E124A0 /* README.md */; };
 		3691C326241913ED00E124A0 /* h.png in Resources */ = {isa = PBXBuildFile; fileRef = 3691C31C241913ED00E124A0 /* h.png */; };
 		3691C327241913ED00E124A0 /* lc.png in Resources */ = {isa = PBXBuildFile; fileRef = 3691C31D241913ED00E124A0 /* lc.png */; };
 		3691C328241913ED00E124A0 /* lr.png in Resources */ = {isa = PBXBuildFile; fileRef = 3691C31E241913ED00E124A0 /* lr.png */; };
@@ -35,7 +34,6 @@
 		3691C30E2419136600E124A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3691C3112419136600E124A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3691C3132419136600E124A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3691C319241913E200E124A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3691C31C241913ED00E124A0 /* h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h.png; sourceTree = "<group>"; };
 		3691C31D241913ED00E124A0 /* lc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lc.png; sourceTree = "<group>"; };
 		3691C31E241913ED00E124A0 /* lr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lr.png; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				3691C31B241913ED00E124A0 /* images */,
-				3691C319241913E200E124A0 /* README.md */,
 				3691C3072419136100E124A0 /* AppDelegate.swift */,
 				3691C3092419136100E124A0 /* ViewController.swift */,
 				3691C30B2419136100E124A0 /* Main.storyboard */,
@@ -174,7 +171,6 @@
 				3691C3122419136600E124A0 /* LaunchScreen.storyboard in Resources */,
 				3691C30F2419136600E124A0 /* Assets.xcassets in Resources */,
 				3691C32D241913ED00E124A0 /* c.png in Resources */,
-				3691C31A241913E200E124A0 /* README.md in Resources */,
 				3691C328241913ED00E124A0 /* lr.png in Resources */,
 				3691C329241913ED00E124A0 /* hc.png in Resources */,
 				3691C3322419140000E124A0 /* appIcon_60x60@2x.png in Resources */,
