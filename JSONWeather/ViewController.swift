@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 			/// If the server responded as expected, then clear any old data, and load the new data
 			self.tableData.removeAll()
 			DispatchQueue.main.async {
-				print("Status: updating table data")
+				//print("Status: updating table data")
 				self.tableView.reloadData()
 			}
 			
@@ -74,11 +74,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 						for weatherDictionary:Dictionary in arrayOfWeatherDictionaries {
 							self.tableData.append(weatherDictionary)
 							//print("\nWeather \(weatherDictionary["applicable_date"]!) \(weatherDictionary["weather_state_name"]!)")
-							DispatchQueue.main.async { // Correct
-								self.tableView.reloadData()
-							}
 						}
-						//print("\n\nTableData (Array of Weather Dictionaries) is: \(tableData)")
+						DispatchQueue.main.async {
+							self.tableView.reloadData()
+						}
 					}
 				}
 				
@@ -112,14 +111,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		
 		let weatherCellDict:Dictionary = tableData[indexPath.row]
 		
-		/* the dictionary for each date looks like this
-		"weather_state_name" : "Heavy Rain",
-		"weather_state_abbr" : "hr",
-		"applicable_date" : "2020-03-02",
-		"the_temp" : 8.075
+		/** the dictionary for each date looks like this
+			"weather_state_name" : "Heavy Rain",
+			"weather_state_abbr" : "hr",
+			"applicable_date" : "2020-03-02",
+			"the_temp" : 8.075
 		*/
 		
-		// Use DateFormatter to convert the date from "2020-03-02" into something more readable: "Fri 2 Mar 2020"
+		/// Use DateFormatter to convert the date from "2020-03-02" into something more readable, eg. "Fri 2 Mar 2020"
 		let stringDate = weatherCellDict["applicable_date"] as! String
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -137,20 +136,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		let displayDate = String("\(dayName), \(dayNumber) \(monthName)")
 		
 		
-		// separate out the useful part of the temperature eg. from '7.3453' to 7°
+		/// separate out the useful (first) part of the temperature eg. 7 from from '7.3453'
 		let tempNumber = weatherCellDict["the_temp"] as! NSNumber
 		var tempString = tempNumber.description
 		tempString = tempString.components(separatedBy: ".")[0]
 		
 		let weatherString:String = weatherCellDict["weather_state_name"] as! String
 		
-		// use the abbrevation for the weather to reference the image of the same name
-		// eg. light cloud = 'lc' and we have an image named 'lc'
+		/// use the abbrevation for the weather to reference the image of the same name eg. light cloud = 'lc'
+		/// then because we put the images into the projects Assets we can use that image name eg. image named 'lc'
 		let imgRef = weatherCellDict["weather_state_abbr"] as! String
 		let imageForCell =  UIImage(imageLiteralResourceName: imgRef)
-		//imageForCell.size = CGSize(width: 50, height: 50)
 		
-		// Construct the table cell for the weather on that date
+		/// Finally, construct the table cell for the weather on that date
 		cell?.textLabel?.text = displayDate
 		cell?.detailTextLabel?.text = String("\(weatherString) \(tempString)°") // eg. Cloudy 7°
 		cell?.imageView?.image = imageForCell
