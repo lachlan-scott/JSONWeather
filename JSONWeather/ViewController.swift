@@ -27,8 +27,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		getJSONWeather()
 	}
 	
+	func checkDelegate() {
+		if tableView.delegate != nil {
+			if (tableView.delegate?.isEqual(self))! {
+				print("Delegate is Self")
+			}
+		} else { print("Delegate is nil") }
+	}
+	
 	func getJSONWeather (){
-
+		
 		let session = URLSession.shared
 		/// You can change this to get different weather reports; see the README
 		let url = URL(string: "https://www.metaweather.com/api/location/1118370/")!
@@ -95,6 +103,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
+		checkDelegate()
 	}
 	
 	// MARK: UITableView Protocol Methods
