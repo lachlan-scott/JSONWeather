@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366B2F88243C397B00BA2974 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 366B2F87243C397B00BA2974 /* README.md */; };
 		3691C3082419136100E124A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3691C3072419136100E124A0 /* AppDelegate.swift */; };
 		3691C30A2419136100E124A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3691C3092419136100E124A0 /* ViewController.swift */; };
 		3691C30D2419136100E124A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3691C30B2419136100E124A0 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		366B2F87243C397B00BA2974 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3691C3042419136100E124A0 /* JSONWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3691C3072419136100E124A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3691C3092419136100E124A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		3691C2FB2419136100E124A0 = {
 			isa = PBXGroup;
 			children = (
+				366B2F87243C397B00BA2974 /* README.md */,
 				3691C3062419136100E124A0 /* JSONWeather */,
 				3691C3052419136100E124A0 /* Products */,
 			);
@@ -172,6 +175,7 @@
 				3691C30F2419136600E124A0 /* Assets.xcassets in Resources */,
 				3691C32D241913ED00E124A0 /* c.png in Resources */,
 				3691C328241913ED00E124A0 /* lr.png in Resources */,
+				366B2F88243C397B00BA2974 /* README.md in Resources */,
 				3691C329241913ED00E124A0 /* hc.png in Resources */,
 				3691C3322419140000E124A0 /* appIcon_60x60@2x.png in Resources */,
 				3691C30D2419136100E124A0 /* Main.storyboard in Resources */,
