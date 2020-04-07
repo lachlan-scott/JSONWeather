@@ -2,6 +2,8 @@
 
 This is an instructional app that uses an online API and parses the JSON response
 
+So you say, Wiem! <raises eyebrows with suspicion>
+
 We're using the MetaWeather website which provides a free API with a JSON feed. `https://www.metaweather.com/api/`  
 The demo app is simple but useful, and looks pretty good, but you should be able to think of many ways to extend it using the information available through the API to make it quite comprehensive.
 
