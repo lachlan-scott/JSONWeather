@@ -2,7 +2,7 @@
 
 This is an instructional app that uses an online API and parses the JSON response. We're using the MetaWeather website which provides a free API with a JSON feed. `https://www.metaweather.com/api/`  
 
-![](../Screenshots/Forecast.png)
+![](Screenshots/Forecast.png)
 
 The demo app is useful and good-looking, but the functionality is basic, so you should be able to think of many ways to use the information available through the API to extend the app to your liking. The finished project looks like this:
 
